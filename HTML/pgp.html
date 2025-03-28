@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="JS/pgp.js"></script>
+    <link rel="stylesheet" href="CSS/pgp.css" />
+    <title>Diagnósticos</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Diagnóstico Médico IA</h1>
+      <div id="input-container">
+        <input type="text" id="sintoma" placeholder="Digite seus sintomas..." />
+        <button id="info" onclick="mostrarInfo()">?</button>
+      </div>
+      <p id="resultado"></p>
+      <button
+        id="diagnosticar-novamente"
+        onclick="reiniciarDiagnostico()"
+        style="display: none"
+      >
+        Diagnosticar novamente
+      </button>
+      <div id="info-box" style="display: none">
+        <p>
+          Digite seus sintomas na caixa de texto e aperte Enter. A IA vai
+          "diagnosticar" sua condição e mostrar uma resposta engraçada.
+        </p>
+        <button onclick="fecharInfo()">Fechar</button>
+      </div>
+    </div>
+
+    <audio
+      id="som"
+      src="https://www.myinstants.com/media/sounds/vine-boom.mp3"
+    ></audio>
+  </body>
+</html>
