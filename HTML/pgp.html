@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="JS/pgp.js"></script>
-    <link rel="stylesheet" href="CSS/pgp.css" />
+    <link rel="stylesheet" href="/CSS/pgp.css" />
     <title>Diagnósticos</title>
   </head>
   <body>
@@ -15,6 +14,7 @@
         <button id="info" onclick="mostrarInfo()">?</button>
       </div>
       <p id="resultado"></p>
+
       <button
         id="diagnosticar-novamente"
         onclick="reiniciarDiagnostico()"
@@ -22,10 +22,11 @@
       >
         Diagnosticar novamente
       </button>
+
       <div id="info-box" style="display: none">
         <p>
-          Digite seus sintomas na caixa de texto e aperte Enter. A IA vai
-          "diagnosticar" sua condição e mostrar uma resposta engraçada.
+          Digite seus sintomas na caixa de texto. A IA vai diagnosticar sua
+          condição.
         </p>
         <button onclick="fecharInfo()">Fechar</button>
       </div>
@@ -35,5 +36,7 @@
       id="som"
       src="https://www.myinstants.com/media/sounds/vine-boom.mp3"
     ></audio>
+
+    <script src="/JS/pgp.js"></script>
   </body>
 </html>

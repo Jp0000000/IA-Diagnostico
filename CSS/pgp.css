@@ -1,10 +1,6 @@
 /* Estilos Gerais */
 body {
-  background: linear-gradient(
-    135deg,
-    #ff80bf,
-    #ff1493
-  ); /* Gradiente vibrante */
+  background: linear-gradient(135deg, #80e8ff, #ff1493);
   font-family: "Comic Sans MS", sans-serif;
   display: flex;
   justify-content: center;
@@ -27,7 +23,7 @@ body {
 
 h1 {
   font-size: 36px;
-  color: white;
+  color: rgb(0, 0, 0);
   margin-bottom: 20px;
   animation: fadeIn 2s ease-out; /* Animação no título */
 }
@@ -63,13 +59,18 @@ h1 {
   color: white;
   border: none;
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 50%; /**/
+  width: 40px; /* tamanho da bolinha */
+  height: 40px; /*  tamanho da bolinha */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
 }
 
 #resultado {
   font-size: 24px;
-  color: #ff1493;
+  color: #ff1414;
   font-weight: bold;
   margin-top: 20px;
 }
