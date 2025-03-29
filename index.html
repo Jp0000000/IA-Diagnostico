@@ -13,6 +13,8 @@
         <button id="info" onclick="mostrarInfo()">?</button>
       </div>
 
+      <img id="robo-img" src="https://i.imgflip.com/3rbfcj.jpg" alt="IA Robô" />
+
       <p id="made">Made by PEPAS '-'</p>
 
       <p id="resultado"></p>
@@ -138,6 +140,16 @@
         cursor: pointer;
         font-size: 18px;
         display: none;
+      }
+
+      #robo-img {
+        width: 200px;
+        border-radius: 5%;
+        height: auto;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       #info-box {
