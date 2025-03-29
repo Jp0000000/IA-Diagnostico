@@ -13,6 +13,8 @@
         <button id="info" onclick="mostrarInfo()">?</button>
       </div>
 
+      <p id="made">Made by PEPAS '-'</p>
+
       <p id="resultado"></p>
       <div id="loader" class="loader" style="display: none"></div>
 
@@ -158,6 +160,16 @@
         border-radius: 10px;
         cursor: pointer;
         font-size: 16px;
+      }
+
+      #made {
+        color: #ffffff;
+        position: fixed;
+        right: 9px;
+        bottom: 10px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: right;
       }
 
       @keyframes fadeIn {
